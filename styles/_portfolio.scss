@@ -1,0 +1,41 @@
+.portfolio {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin: 0 auto;
+  div {
+    @include walrus();
+    border-radius: $smallradius;
+    aspect-ratio: 1;
+  }
+  span {
+    background-color: $gridblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: $smallradius;
+    opacity: 0;
+    transition-duration: $speed;
+    button {
+      font-size: 20px;
+    }
+  }
+  span:hover {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1240px) {
+  .portfolio {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

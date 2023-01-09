@@ -1,0 +1,8 @@
+body {
+  background-color: $gray;
+  font-family: "Helvetica";
+}
+@import "./constants";
+@import "./testimonial";
+@import "./portfolio";
+@import "./socialmedia";

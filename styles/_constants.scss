@@ -1,0 +1,21 @@
+$radius: 30px;
+$smallradius: 20px;
+$gray: #c3cfe2;
+$white: #fff;
+$blue: #686de0;
+$darkgray: rgb(85, 85, 85);
+$gridblue: #232c3d;
+$speed: 200ms;
+$socwidthmax: 250px;
+$socwidthmin: 48px;
+@mixin shade {
+  box-shadow: 10px 10px 50px $darkgray;
+}
+@mixin walrus {
+  background-image: url(../walrus.png);
+  background-size: cover;
+}
+@mixin logo {
+  background-position: left;
+  background-repeat: no-repeat;
+}

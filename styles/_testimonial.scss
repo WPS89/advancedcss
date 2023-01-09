@@ -1,0 +1,50 @@
+.container {
+  display: grid;
+  width: 645px;
+  grid-template-rows: 540px 100px 160px;
+  grid-template-columns: 645px;
+  border-radius: $radius;
+  margin: 0 auto;
+  @include shade();
+}
+
+article {
+  color: $darkgray;
+  font-size: 30px;
+  font-weight: 510;
+  padding: 50px;
+  line-height: 1.8;
+  background-color: $white;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+section {
+  background-color: $blue;
+}
+
+footer {
+  background-color: $blue;
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+  text-align: center;
+  h1 {
+    color: $white;
+  }
+  a {
+    color: $gray;
+    font-size: 25px;
+    text-decoration: none;
+  }
+}
+
+.portrait {
+  @include walrus();
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  margin: -98px auto;
+  border-style: solid;
+  border-width: 8px;
+  border-color: $white;
+}
